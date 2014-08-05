@@ -1,0 +1,33 @@
+<script>
+
+
+	var guess;
+	var outputMessage;
+	var answer = 8;
+
+	guess = prompt("Guess how many pounds my laptop weighs.")
+
+	var guessWeight = function(guess) {
+
+		if (guess == answer) {
+			outputMessage = "It's actually 8.4 pounds but you are CORRECT!";
+		}
+		else if (guess > answer) {
+			outputMessage = "You guessed too high! Try again.";
+			alert(outputMessage);
+			guess = prompt("Guess how many pounds my laptop weighs.")
+			guessWeight(guess);
+		}
+		else {
+			outputMessage = "You have one of those fancy tiny machines? You guessed too low! Try again.";
+			alert(outputMessage);
+			guess = prompt("Guess how many pounds my laptop weighs.")
+			guessWeight(guess);
+		}
+
+	};
+
+	guessWeight(guess);
+	alert(outputMessage);	
+	
+</script>
