@@ -5,7 +5,7 @@
 	var outputMessage;
 	var answer = 8;
 
-	guess = prompt("Guess how many pounds my laptop weighs.")
+	guess = prompt("Guess how many pounds my laptop weighs.");
 
 	var guessWeight = function(guess) {
 
@@ -25,9 +25,11 @@
 			guessWeight(guess);
 		}
 
+		
 	};
 
 	guessWeight(guess);
-	alert(outputMessage);	
+	alert(outputMessage);
 	
+		
 </script>
